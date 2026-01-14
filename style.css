@@ -1,0 +1,310 @@
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Body ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #6a4a3a;/*#3b141c*/
+  color: #ffffff;
+}
+
+/* ===== Header ===== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 70px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #f4a460;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    margin-left: 40px;       
+    text-decoration: none;   
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0.5px;    
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #f4a460;
+    transform: translateY(-2px);   
+}
+
+
+/* ===== Hero Section ===== */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 90px 90px;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h3 {
+  color: #f4a460;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #ddd;
+}
+
+/* ===== Buttons ===== */
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  background-color: #f4a460;
+  padding: 12px 25px;
+  border-radius: 25px;
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #ffffff;
+}
+
+.btn.outline {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.btn.outline:hover {
+  background-color: #ffffff;
+  color: #000;
+}
+
+/* ===== Hero Image ===== */
+.hero-img img {
+  width: 380px;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* ===== Animation ===== */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+/* ===== Page Section ===== */
+.page {
+  padding: 80px 70px;
+}
+
+.page h1 {
+  margin-bottom: 20px;
+}
+
+/* ===== Menu List ===== */
+.menu li {
+  list-style: none;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* ===== Contact Form ===== */
+form {
+  max-width: 400px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2a0e14;
+  margin-top: 40px;
+  font-size: 14px;
+}
+/* ===== MENU CARD SECTION ===== */
+
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* Individual Card */
+.menu-card {
+  background-color: #2a0e14;
+  border-radius: 16px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Fixed Image Size (VERY IMPORTANT) */
+.menu-card img {
+  width: 100%;
+  height: 160px;              /* SAME HEIGHT FOR ALL */
+  object-fit: cover;          /* Crop nicely */
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+/* Coffee Name */
+.menu-card h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+/* Separator Line */
+.menu-card h3::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #f4a460;
+  margin: 8px auto;
+}
+
+/* One-line Description */
+.menu-card p {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+/* Price */
+.menu-card span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #f4a460;
+}
+/* ===== Contact Form Section ===== */
+.contact-page {
+  padding: 80px 70px;
+  text-align: center;
+}
+
+.contact-page h1 {
+  font-size: 36px;
+  color: #f4a460;
+  margin-bottom: 15px;
+}
+
+.contact-page p {
+  font-size: 15px;
+  color: #ddd;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Form Styling */
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: none;
+  background-color: #2a0e14;
+  color: #fff;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #ccc;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 8px #f4a460;
+}
+
+/* Submit Button */
+.contact-form button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  background-color: #f4a460;
+  color: #000;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Responsive */
+@media screen and (max-width: 500px) {
+  .contact-page {
+    padding: 50px 20px;
+  }
+}
+
